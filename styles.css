@@ -1,0 +1,72 @@
+/* CSS by Alexander Rothstein */
+@import url ('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Roots */
+:root {
+    --color-teal: #4CA7C0;
+  --color-purple: #484FB7;
+  --color-lavender: #6B8FE7;
+  --color-yellow: #E9BB57;
+  --color-pink: #D9526F;
+  --color-dark-gray: #1E1E1E;
+  --color-white: #ffffff;
+}
+
+h1, h2 {
+    font-family: 'Kavoon';
+}
+
+ * {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    
+}
+
+nav h2 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.15rem;
+}
+body {
+    
+    background-color: var(--color-lavender);
+    
+}
+header {
+    background-color: var(--color-purple);
+    padding: 2rem;
+    margin: 0 10rem 0 10rem;
+    text-align: center;
+
+}
+nav {
+    background-color: var(--color-yellow);
+    padding: 2rem;
+    text-align: center;
+}
+section {
+    text-align: center;
+    background-color: var(--color-purple);
+    padding: 2rem;
+    margin: 0 10rem 0 10rem;
+    
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}

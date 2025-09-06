@@ -1,5 +1,5 @@
 /* CSS by Alexander Rothstein */
-@import url ('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 /* reset */
 * {
     margin: 0;
@@ -26,23 +26,36 @@ h1, h2 {
 }
 
 h1 {
+    font-family: 'Kavoon';
+    font-weight: bold;
+    color: var(--color-white);
     font-size: 3rem;
     
 }
 
 nav h2 {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-black);
+    
     font-size: 1.5rem;
+    font-style: italic;
 }
 
 h2 {
+    color: var(--color-white);
+    font-family: 'Kavoon';
+    font-weight: italic;
     font-size: 2rem;
 }
 
 h3 {
+    text-align: left;
+    color: var(--color-yellow);
     font-size: 1.5rem;
 }
 
 h4 {
+    color: var(--color-purple);
     font-size: 1.15rem;
 }
 body {
@@ -51,22 +64,147 @@ body {
     
 }
 header {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-purple);
-    padding: 2rem;
-    margin: 0 10rem 0 10rem;
+    padding: 1rem 0 1rem 0rem;
+    margin:0 10rem 0 10rem;
     text-align: center;
 
 }
+header p {
+    color: var(--color-white);
+    font-size: 1rem;
+    margin: 2rem;
+    font-style: italic;
+}
 nav {
     background-color: var(--color-yellow);
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
+header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 section {
-    text-align: center;
+    text-align: justify;
     background-color: var(--color-purple);
     padding: 2rem;
-    margin: 0 10rem 0 10rem;
+    margin: 0 10rem  0 10rem;
     
+    
+}
+
+div {
+    background-color: var(--color-white);
+    margin-bottom: 1.5rem;
+    padding: 3rem;
+    border-radius: 8px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    list-style: none;
+    display: column;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--color-white);
+}
+h2:not(nav h2) {
+    text-align: left;
+}
+
+#Why{
+    background-color: var(--color-pink);
+}
+
+#Why ul {
+  display: grid;
+  font-weight: bold;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  border-radius: 8px;
+}
+
+#Why ul li:nth-child(1) {
+  background-color: var(--color-teal);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#Why ul li:nth-child(2) {
+  background-color: var(--color-purple);
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+#Why ul li:nth-child(3) {
+  background-color: var(--color-yellow);
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+#Why ul li:nth-child(4) {
+  background-color: var(--color-white);
+  padding: 3rem;
+  border-radius: 8px;
+}
+#Prices h3 {
+    color: var(--color-white);
+}
+#Prices h4 {
+    justify-content: left;
+    text-align: left;
+    color: var(--color-yellow);
+    
+}
+#Prices table {
+    display: table;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+#Prices th {
+    background-color: var(--color-yellow);
+    padding: 1rem;
+    margin: 5rem;
+}
+#Prices td {
+    background-color: var(--color-white);
+    text-align: center;
+    border: 1px solid var(--color-yellow);
+    padding: 1rem;
+    margin: 5rem;
+}
+#First {background-color: var(--color-pink);
+}
+#First h2, #First p {
+  color: white;
+}
+
+#First a {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+  color: var(--color-dark-gray); /* or any color you want for the link */
+  text-decoration: none;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-purple);
+    padding: 1rem;
+    color: var(--color-white);
+    margin: 0 10rem 0 10rem;
+    padding: 5rem;
+}
+footer a {
+    color: var(--color-white);
 }

@@ -16,6 +16,8 @@
   --color-dark-gray: #1E1E1E;
   --color-white: #ffffff;
 }
+/*GLOBAL STYLES*/
+
 
 h1, h2 {
     font-family: 'Kavoon';
@@ -44,7 +46,7 @@ nav h2 {
 h2 {
     color: var(--color-white);
     font-family: 'Kavoon';
-    font-weight: italic;
+    font-style: italic;
     font-size: 2rem;
 }
 
@@ -107,7 +109,7 @@ div {
 
 li {
     list-style: none;
-    display: column;
+    
     padding: 1rem;
     margin: 1rem;
     background-color: var(--color-white);

@@ -62,7 +62,7 @@ h4 {
     color: var(--color-purple);
     font-size: 1.15rem;
 }
-}
+
 body {
     
     background-color: var(--color-lavender);
@@ -212,4 +212,5 @@ footer {
 }
 footer a {
     color: var(--color-white);
+}
 }

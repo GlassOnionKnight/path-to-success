@@ -17,7 +17,7 @@
   --color-white: #ffffff;
 }
 /*GLOBAL STYLES*/
-@media screen   and (max-width: 450px) {
+@media screen   and (max-width: 450px) {}
 
 
 
@@ -195,8 +195,7 @@ h2:not(nav h2) {
     display: flex;
     justify-content: center;
     background-color: var(--color-white);
-  color: var(--color-dark-gray); /* or any color you want for the link */
-  text-decoration: none;
+  color: var(--color-dark-gray); 
   padding: 2rem;
   border-radius: 8px;
 }
@@ -212,5 +211,4 @@ footer {
 }
 footer a {
     color: var(--color-white);
-}
 }

@@ -1,0 +1,278 @@
+
+    /* CSS by Alex Rothstein*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+    /* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: flex;
+    flex-direction: column;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+    border-collapse: collapse;
+	border-spacing: 0;
+}
+
+    /* Roots */
+:root {
+    --color-teal: #4CA7C0;
+    --color-purple: #484FB7;
+    --color-lavender: #6B8FE7;
+    --color-yellow: #E9BB57;
+    --color-pink: #D9526F;
+    --color-dark-gray: #1E1E1E;
+    --color-white: #ffffff;
+}
+    /*GLOBAL STYLES*/
+
+
+h1, h2{
+    font-family: 'Kavoon';
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: 'Kavoon';
+    font-weight: bold;
+    color: var(--color-white);
+    font-size: 3em;
+}
+
+nav h2{
+    font-family: 'inter', sans-serif;
+    color: var(--color-dark-gray);
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+h2 {
+    color:var(--color-white);
+    font-family: 'kavoon';
+    font-style: italic;
+    font-size: 2em;
+}
+
+h3 {
+    text-align:left;
+    color:var(--color-purple);
+    font-size: 1.5em;
+}
+
+h4 {
+    color: var(--color-purple);
+    font-size: 1.15em;
+}
+body {
+    background-color: var(--color-lavender);
+
+
+}
+
+header {
+    display: flex;
+    flex-direction: column ;
+    background-color: var(--color-purple);
+    padding: 2em 0 0em 0;
+    margin: 0 20em 0 20em;
+    text-align: center;
+}
+header p {
+    color: var(--color-white);
+    font-size: 1em;
+    margin: 2em;
+    font-style: italic;
+}
+nav {
+    background-color: var(--color-yellow);
+    padding: 1em;
+    text-align: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+    text-align: justify;
+    background-color: var(--color-purple);
+    padding: 1em;
+    margin: 0 10em  0 10em;
+    
+    
+    
+}
+.services {
+    background-color: var(--color-white);
+    text-align: justify;
+    padding: 1em;
+    margin: 1em;
+}
+div {
+    background-color: var(--color-lavender);
+    margin: 0em 10em 0 10em;
+    padding: 0em;
+    border-radius: 1rem;
+    
+}
+
+li {
+    list-style: none;
+    
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--color-white);
+}
+h2:not(nav h2) {
+    text-align: left;
+}
+
+.Why{
+    background-color: var(--color-pink);
+}
+
+.Why ul {
+  display: grid;
+  font-weight: bold;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  list-style: none;
+  border-radius: 8px;
+}
+
+.Why ul li:nth-child(1) {
+  background-color: var(--color-teal);
+  padding: 2em;
+  border-radius: 8px;
+}
+
+.Why ul li:nth-child(2) {
+  background-color: var(--color-purple);
+  padding: 3em;
+  border-radius: 8px;
+}
+
+.Why ul li:nth-child(3) {
+  background-color: var(--color-yellow);
+  padding: 3em;
+  border-radius: 8px;
+}
+
+.Why ul li:nth-child(4) {
+  background-color: var(--color-white);
+  padding: 3em;
+  border-radius: 8px;
+}
+ .Prices {
+    display: flex;
+    text-align: justify;
+    margin: 0em;
+ }
+.Prices h3 {
+    color: var(--color-white);
+}
+.Prices h4 {
+    justify-content: left;
+    text-align: left;
+    color: var(--color-yellow);
+    
+}
+.Prices table {
+    display: table;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.Prices th {
+    background-color: var(--color-yellow);
+    padding: 1em;
+    margin: 5em;
+}
+.Prices td {
+    background-color: var(--color-white);
+    text-align: center;
+    border: 1px solid var(--color-yellow);
+    padding: 1em;
+    margin: 5em;
+}
+.First {background-color: var(--color-pink);
+    display: flex;
+    margin: 0em;
+}
+.First h2, #First p {
+  color: white;
+}
+
+.First a {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+  color: var(--color-dark-gray); 
+  padding: 1em;
+  border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-purple);
+    padding: 1em;
+    color: var(--color-white);
+    margin: 0 20em 0 20em;
+    padding: 1rem;
+    text-align: center;
+}
+footer a {
+    color: var(--color-white);
+}
+@media screen   and (max-width: 450px) {
+
+    body {
+        max-width: 450px;
+    }
+}
